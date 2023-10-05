@@ -1,4 +1,4 @@
-package com.example.receipt.user;
+package com.example.recipe.user;
 
 import java.util.Optional;
 

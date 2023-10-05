@@ -1,4 +1,4 @@
-package com.example.receipt.config;
+package com.example.recipe.config;
 
 import java.io.IOException;
 

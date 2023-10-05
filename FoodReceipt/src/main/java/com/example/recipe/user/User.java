@@ -1,4 +1,4 @@
-package com.example.receipt.user;
+package com.example.recipe.user;
 
 import java.util.Collection;
 import java.util.List;
@@ -25,7 +25,7 @@ import lombok.Data;
 @Table(name = "_user")
 public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Integer id;
 
     private String firstname;

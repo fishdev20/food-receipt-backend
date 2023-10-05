@@ -1,4 +1,4 @@
-package com.example.receipt.auth;
+package com.example.recipe.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
