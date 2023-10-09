@@ -40,6 +40,7 @@ public class JwtService {
         User user = (User) userDetails;
         return Jwts.builder()
                 .setClaims(extraClaims)
+                .setSubject(userDetails.getUsername())
                 .claim("userEmail", userDetails.getUsername())
                 .claim("userId", user.getId().toString())
                 .claim("firstName", user.getFirstname().toString())

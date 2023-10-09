@@ -27,6 +27,7 @@ public class SecurityConfigaration {
                                                 .disable())
                                 .authorizeHttpRequests(auth -> auth
                                                 .requestMatchers("/api/v1/auth/**").permitAll()
+                                                .requestMatchers("/api/v1/users/**").authenticated()
                                                 .anyRequest().authenticated())
                                 .sessionManagement(management -> management
                                                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
